@@ -4,7 +4,7 @@ const { config } = require('../wdio.shared.conf');
 // Specs
 // ============
 config.specs = [
-    './tests/specs/**/app*.spec.js',
+    './tests/specs/hackathon.spec.js',
 ];
 
 // ============
@@ -17,11 +17,11 @@ config.capabilities = [
         deviceName: 'Samsung Galaxy S9*',
         automationName: 'UiAutomator2',
         // The reference to the app
-        testobject_app_id: '4',
+        // testobject_app_id: '8',
         // The api key that has a reference to the app-project in the TO cloud
-        testobject_api_key: process.env.SAUCE_RDC_EU_ACCESS_KEY_ANDROID_WDIO,
+        testobject_api_key: "423986F49EE94D24A5C210FCE41716DE",
         // The name of the test for in the cloud
-        testobject_test_name: 'wdio-demo-app-test',
+        // testobject_test_name: 'wdio-demo-app-test',
         // Some default settings
         // You can find more info in the TO Appium Basic Setup section
         platformName: 'Android',

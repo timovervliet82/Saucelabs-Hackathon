@@ -30,7 +30,10 @@
     "url": "https://github.com/webdriverio/appium-boilerplate/issues"
   },
   "homepage": "https://github.com/webdriverio/appium-boilerplate#readme",
-  "dependencies": {},
+  "dependencies": {
+    "appium": "^1.12.1",
+    "start-android-emulator": "^0.1.3"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",

@@ -5,10 +5,10 @@ const SELECTORS = {
     LOGIN_SCREEN: '~Login-screen',
     LOGIN_CONTAINER_BUTTON: '~button-login-container',
     SIGN_UP_CONTAINER_BUTTON: '~button-sign-up-container',
-    LOGIN_BUTTON: '~button-LOGIN',
+    LOGIN_BUTTON: '.login-button button.btn',
     SIGN_UP_BUTTON: '~button-SIGN UP',
-    INPUT: '~input-email',
-    PASSWORD: '~input-password',
+    USERNAME: '#Input_UsernameVal',
+    PASSWORD: '#Input_PasswordVal',
     REPEAT_PASSWORD: '~input-repeat-password'
 };
 
@@ -17,37 +17,37 @@ class LoginScreen extends AppScreen {
         super(SELECTORS.LOGIN_SCREEN);
     }
 
-    get loginContainerButon () {
-        return $(SELECTORS.LOGIN_CONTAINER_BUTTON);
-    }
+    // get loginContainerButon () {
+    //     return $(SELECTORS.LOGIN_CONTAINER_BUTTON);
+    // }
 
-    get signUpContainerButon () {
-        return $(SELECTORS.SIGN_UP_CONTAINER_BUTTON);
-    }
+    // get signUpContainerButon () {
+    //     return $(SELECTORS.SIGN_UP_CONTAINER_BUTTON);
+    // }
 
     get loginButton () {
         return $(SELECTORS.LOGIN_BUTTON);
     }
 
-    get signUpButton () {
-        return $(SELECTORS.SIGN_UP_BUTTON);
-    }
+    // get signUpButton () {
+    //     return $(SELECTORS.SIGN_UP_BUTTON);
+    // }
 
-    get email () {
-        return $(SELECTORS.INPUT);
+    get userName () {
+        return $(SELECTORS.USERNAME);
     }
 
     get password () {
         return $(SELECTORS.PASSWORD);
     }
 
-    get repeatPassword () {
-        return $(SELECTORS.REPEAT_PASSWORD);
-    }
+    // get repeatPassword () {
+    //     return $(SELECTORS.REPEAT_PASSWORD);
+    // }
 
-    get alert () {
-        return NativeAlert;
-    }
+    // get alert () {
+    //     return NativeAlert;
+    // }
 }
 
 export default new LoginScreen();
